@@ -15,11 +15,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<Home user={user} setUser={setUser} />} path='/'/>
-        {/* <Route element={<NoAccess/>} path='/'/> */}
 
-        <ProtectedRoutes>
-          <Route element={<SecretPage user={user} />} path='/message'/>
-        </ProtectedRoutes>
+        <Route element={<ProtectedRoutes user={user}/>}>
+          <Route element={<SecretPage/>} path='/message'/>
+        </Route>
       </Routes>
     </BrowserRouter>
   )
