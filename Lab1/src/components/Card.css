@@ -1,0 +1,33 @@
+.card{
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    
+
+    /* width: 200px; */
+
+    min-width: 250px;
+    max-width: 400px;
+
+    transition: .5s;
+
+    .title{
+
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+}
+
+.card:hover{
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(232,232,232,1);
+}
+
+.unchosen-card{
+    background-color: rgb(50, 50, 50);
+}
+.chosen-card{
+    background-color: rgb(19, 97, 0);
+}
