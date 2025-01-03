@@ -6,3 +6,4 @@ const ProtectedRoutes = ({user}) => {
 }
 
 export default ProtectedRoutes
+
